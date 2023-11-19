@@ -1,43 +1,62 @@
-html,
-    body {
+html,body {
       position: relative;
       height: 100%;
-    }
+}
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
+body {
       margin: 0;
       padding: 0;
-    }
+      font-family: 'Poppins', sans-serif;
+}
 
-    .swiper {
+.swiper {
       width: 100%;
       height: 100%;
-    }
+}
 
-    .swiper-slide {
+.swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+}
 
-    .swiper-slide img {
+.swiper-slide img {
       display: block;
-      width: 700px;
-      height: 700px;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-    }
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
-    .swiper {
+.swiper {
       width: 100%;
       height: 300px;
       margin: 20px auto;
-    }
+}
 
- 
+.containerGeral{
+    background: #00B8F2;
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tituloContainer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+color: #0F215F;
+  
+}
+
+.tituloContainer span{
+      color: #F09;
+      font-weight: ;
+}
