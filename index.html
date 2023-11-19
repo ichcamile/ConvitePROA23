@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Swiper demo</title>
+  <title>DemoDay 2023</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -11,48 +11,162 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
-  <div class="containerGeral">
+
+  <section class="destaque">
+    <img id="topo" src="assets/logo-proa.png" alt="">
+    <article class="container-conteudo-destaque">
+      <div class="texto-inicial">
+        <h1>DEMO DAY</h1>
+        <h4>Sejam bem vindos ao futuro da inovação!</h4>
+        <p>Onde mentes criativas se unem para apresentar projetos inovadores.</p>
+        <a href="#projetos"><button>CONHEÇA OS PROJETOS</button></a>
+      </div>
+      <div class="temporizador">
+        <p id="paragrafo">
+          Contagem regressiva para o nosso
+          <span>DEMO-DAY</span>
+        </p>
+        <div class="temporizador-demoday">
+          <div class="temporizador-el days-c">
+            <p class="text" id="days">0</p>
+            <span style="color: white;">Dias</span>
+          </div>
+          <div class="temporizador-el hours-c">
+            <p class="text" id="hours">0</p>
+            <span style="color: white;">Horas</span>
+          </div>
+          <div class="temporizador-el mins-c">
+            <p class="text" id="mins">0</p>
+            <span style="color: white;">Minutos</span>
+          </div>
+          <div class="temporizador-el seconds-c">
+            <p class="text" id="seconds">0</p>
+            <span style="color: white;">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="container">
+    <h2>o que é o demo day</h2>
+    <div class="conteudo-video">
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat adipisci reiciendis rerum similique
+        assumenda ipsum repudiandae exercitationem sapiente laboriosam delectus veritatis dolores, pariatur fugit
+        molestiae optio placeat molestias quae asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Error possimus commodi reprehenderit quis ab! Earum, eius adipisci ad quas quos iure exercitationem cumque
+        consequuntur, reiciendis incidunt, hic pariatur rem qui!</p>
+      <iframe width="590" height="335" src="https://www.youtube.com/embed/muKs1_fj3Lk?si=tQS4H087mklFHRMX"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div class="containerGeral" id="projetos">
     <div class="tituloContainer">
       <h2 className="titulo">Explore os <span>Projetos</span> Inovadores deste Ano</h2>
     </div>
     <div class="conteinerSwiper">
       <div #swiperRef="" class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"> <img src="../assets/UMBU.jpeg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/AfroGlow.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Agiliza.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Aruana.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Bellifica.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Emp.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Fica-fri.io.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Germine.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Lacoos.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Limpay.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Resily.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Smart-Steps.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Tutora.ia.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/VitiConnect.svg" /> </div>
-          <div class="swiper-slide"> <img src="../assets/Recostura.jpeg" /> </div>
-
+          <div class="swiper-slide"> 
+            <a href="https://linktr.ee/sejaumbu?fbclid=PAAaa0hrKK1FeZpiFP0cJ1cwRnSNm89-3R__FCEKzzK0oNFdQBSeoEa9n2Ifs" target="_blank">
+            <img src="assets/Umbu.svg" />
+          </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://beacons.ai/afroglow_" target="_blank">
+              <img src="assets/AfroGlow.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="" target="_blank">
+              <img src="assets/Agiliza.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="" target="_blank">
+              <img src="assets/Aruana.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="" target="_blank">
+              <img src="assets/Bellifica.svg" />
+            </a></div>
+          <div class="swiper-slide">
+            <a href="" target="_blank"> 
+            <img src="assets/Emp.svg" />
+          </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://linktr.ee/FicaFri.io?utm_source=linktree_profile_share&ltsid=fa800c73-e2da-4e8e-a298-d82159cd1eeb" target="_blank">
+              <img src="assets/Fica-fri.io.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://linktr.ee/germine_?fbclid=PAAab4L7l0o_O8ZjQDs7m9BmJGJ_q1v-NRXOJcQdn1NHs1Sw7OkGJAJBvVtlI" target="_blank">
+              <img src="assets/Germine.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://bento.me/lacoos?fbclid=PAAablCOUW9lsjqm_rt9qp9K6Fj9hvn7edkIg0LzPAjCjdorgyjNw1-i24-40" target="_blank">
+              <img src="assets/Lacoos.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://linktr.ee/limpay?fbclid=PAAab0BTFyg8d8uQNmnNCY9d5nySuCv8J4DyDqVJGlRzaBShL3yX7-kL5UGf0" target="_blank">
+            <img src="assets/Limpay.svg" />
+          </a></div>
+          <div class="swiper-slide">
+            <a href="" target="_blank"> 
+            <img src="assets/Resily.svg" />
+          </a></div>
+          <div class="swiper-slide"> 
+            <a href="" target="_blank">
+              <img src="assets/Smart-Steps.svg" />
+            </a></div>
+          <div class="swiper-slide"> 
+            <a href="https://linktr.ee/tutora.ia?fbclid=PAAabnQfF33WTlOf7RnjFo_nUCXTMr-2e4gDv3ENtY4yZVUbKQTA7gFaiJx_c" target="_blank">
+              <img src="assets/Tutora.ia.svg" />
+            </a></div>
+          <div class="swiper-slide">
+            <a href="" target="_blank"> 
+              <img src="assets/VitiConnect.svg" />
+            </a></div>
+          <div class="swiper-slide">
+            <a href="" target="_blank"> 
+            <img src="assets/Recostura.svg" />
+          </a></div>
+          <div class="swiper-slide">
+            <a href="" target="_blank"> 
+              <img src="assets/Parttida.svg" />
+            </a></div>
         </div>
-
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
     </span<>
+  </div>
+  <div class="localizacao">
+    <h2>Faça parte desse evento e celebre conosco esse dia <span>especial</span></h2>
+    <section class="informacoes">
+        <div class="local">
+            <div class="btn">
+                <a target="_blank" href="https://www.google.com.br/maps/place/FAAP+-+Funda%C3%A7%C3%A3o+Armando+Alvares+Penteado/@-23.5403693,-46.6732491,16z/data=!4m10!1m2!2m1!1sfaap!3m6!1s0x94ce5824d1a84617:0xb44f2198feb49ebe!8m2!3d-23.5450358!4d-46.6629439!15sCgRmYWFwIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fg%2F11h6vv2_8k?entry=ttu">Local</a>
+            </div>
+            <p>R.alagoas, 903 - <br>Higienópolis, São paulo - SP, <br>01242-902 </p>
+        </div>
+        <div class="maps">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.56248205672!2d-46.673249103940755!3d-23.540369265257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5824d1a84617%3A0xb44f2198feb49ebe!2sFAAP%20-%20Funda%C3%A7%C3%A3o%20Armando%20Alvares%20Penteado!5e0!3m2!1spt-BR!2sbr!4v1699983992662!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>
+    <div class="gotohome">
+        <a href="#topo">Volte ao início</a>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
-    <script src="./script.js">  </script>
+    <script src="js/script.js">  </script>
+    <!-- Contador -->
+    <script src="js/contador.js"></script>
 </body>
 
 </html>
