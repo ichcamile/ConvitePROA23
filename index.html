@@ -1,281 +1,383 @@
 <!DOCTYPE html>
 <html lang="PT-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo Day 2023</title>
+    <link rel="shortcut icon" href="assets/icon-proa.png" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Demo Day 2023</title>
-  <link rel="shortcut icon" href="assets/icon-proa.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <section class="destaque">
-    <img id="topo" src="assets/logo-proa.png" alt="">
-    <article class="container-conteudo-destaque">
-      <div class="texto-inicial">
-        <h1>DEMO DAY</h1>
-        <h4>Sejam bem vindos ao futuro da inovação!</h4>
-        <p>Onde mentes criativas se unem para apresentar projetos inovadores.</p>
-        <a href="#projetos"><button>CONHEÇA OS PROJETOS</button></a>
-      </div>
-      <div class="temporizador">
-        <p id="paragrafo">
-          Contagem regressiva para o nosso
-          <span>DEMO-DAY</span>
-        </p>
-        <div class="temporizador-demoday">
-          <div class="temporizador-el days-c">
-            <p class="text" id="days">0</p>
-            <span style="color: white;">Dias</span>
-          </div>
-          <div class="temporizador-el hours-c">
-            <p class="text" id="hours">0</p>
-            <span style="color: white;">Horas</span>
-          </div>
-          <div class="temporizador-el mins-c">
-            <p class="text" id="mins">0</p>
-            <span style="color: white;">Minutos</span>
-          </div>
-          <div class="temporizador-el seconds-c">
-            <p class="text" id="seconds">0</p>
-            <span style="color: white;">Segundos</span>
+  <body>
+    <section class="destaque">
+      <img id="topo" src="assets/logo-proa.png" alt="" />
+      <article class="container-conteudo-destaque">
+        <div class="texto-inicial">
+          <h1>DEMO DAY</h1>
+          <h4>Sejam bem vindos ao futuro da inovação!</h4>
+          <p>
+            Onde mentes criativas se unem para apresentar projetos inovadores.
+          </p>
+          <a href="#projetos"><button>CONHEÇA OS PROJETOS</button></a>
+        </div>
+        <div class="temporizador">
+          <p id="paragrafo">
+            Contagem regressiva para o nosso
+            <span>DEMO-DAY</span>
+          </p>
+          <div class="temporizador-demoday">
+            <div class="temporizador-el days-c">
+              <p class="text" id="days">0</p>
+              <span style="color: white">Dias</span>
+            </div>
+            <div class="temporizador-el hours-c">
+              <p class="text" id="hours">0</p>
+              <span style="color: white">Horas</span>
+            </div>
+            <div class="temporizador-el mins-c">
+              <p class="text" id="mins">0</p>
+              <span style="color: white">Minutos</span>
+            </div>
+            <div class="temporizador-el seconds-c">
+              <p class="text" id="seconds">0</p>
+              <span style="color: white">Segundos</span>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-  </section>
-  <section class="container">
-    <h2>O que é o demo day</h2>
-    <div class="conteudo-video">
-      <p>O Demo Day representa o auge de meses dedicados a um trabalho árduo, criatividade incessante e dedicação incansável. Neste evento, 20 grupos apaixonados estão prontos para apresentar suas ideias revolucionárias. Mais do que uma simples ocasião, é uma celebração da inovação, do pensamento visionário e da busca constante por soluções que tenham o poder de transformar o mundo.
-        Convidamos você a se unir a nós para testemunhar a força das mentes criativas à medida que abordamos suas visões e conquistas.</p>
-      <iframe width="590" height="335" src="https://www.youtube.com/embed/muKs1_fj3Lk?si=tQS4H087mklFHRMX"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-  </section>
-  <div class="containerGeral" id="projetos">
-    <div class="tituloContainer">
-      <h2 id="conhecaMais">Conheça um pouco mais sobre os <span id="spanConhecaMais"> Projetos </span> deste ano</h2>
-    </div>
-    <div class="conteinerSwiper">
-      <div #swiperRef="" class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-
-            <div class="item">
-              <a href="https://beacons.ai/afroglow_"><img class="logos" src="./assets/AfroGlow.svg"></a>
-              <div class="background background1"></div>
-              <img class="cadeado cadeado1" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/agiliza_?utm_source=qr_code"><img class="logos" src="./assets/Agiliza.svg"></a>
-              <div class="background background2"></div>
-              <img class="cadeado cadeado2" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/ajeitalar"><img class="logos" src="./assets/AjeitaLar.svg"></a>
-              <div class="background background3"></div>
-              <img class="cadeado cadeado3" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/aruana8"><img class="logos" src="./assets/Aruana.svg"></a>
-              <div class="background background4"></div>
-              <img class="cadeado cadeado4" src="./assets/Cadeado.svg">
-            </div>
-
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/bellifica?utm_source=qr_code"><img class="logos"
-                  src="./assets/Bellifica.svg"></a>
-              <div class="background background5"></div>
-              <img class="cadeado cadeado5" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/EMP_oficial"><img class="logos" src="./assets/Emp.svg"></a>
-              <div class="background background6"></div>
-              <img class="cadeado cadeado6" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/FicaFri.io"><img class="logos" src="./assets/Fica-fri.io.svg"></a>
-              <div class="background background7"></div>
-              <img class="cadeado cadeado7" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href=""><img class="logos" src="./assets/Germine.svg"></a>
-              <div class="background background8"></div>
-              <img class="cadeado cadeado8" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://bento.me/lacoos"><img class="logos" src="./assets/Lacoos.svg"></a>
-              <div class="background background9"></div>
-              <img class="cadeado cadeado9" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/limpay"><img class="logos" src="./assets/Limpay.png"></a>
-              <div class="background background10"></div>
-              <img class="cadeado cadeado10" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="http://bento.me/motiro"><img class="logos" src="./assets/Motiro.png"></a>
-              <div class="background background11"></div>
-              <img class="cadeado cadeado11" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/somosparttida"><img class="logos" src="./assets/Parttida.svg"></a>
-              <div class="background background12"></div>
-              <img class="cadeado cadeado12" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href=""><img class="logos" src="./assets/Recostura.svg"></a>
-              <div class="background background13"></div>
-              <img class="cadeado cadeado13" src="./assets/Cadeado.svg">
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-                        <a href="https://linktr.ee/Resily_"><img class="logos" src="./assets/Resily.svg"></a>
-                        <div class="background background14"></div>
-                        <img class="cadeado cadeado14" src="./assets/Cadeado.svg">
-                    </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-                        <a href="https://linktr.ee/smartstepsofc"><img class="logos" src="./assets/Smart-Steps.svg"></a>
-                        <div class="background background15"></div>
-                        <img class="cadeado cadeado15" src="./assets/Cadeado.svg">
-                    </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-                        <a href="https://linktr.ee/tutora.ia"><img class="logos" src="./assets/Tutora.ia.svg"></a>
-                        <div class="background background16"></div>
-                        <img class="cadeado cadeado16" src="./assets/Cadeado.svg">
-                    </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/sejaumbu"><img class="logos" src="./assets/Umbu.svg"></a>
-              <div class="background background17"></div>
-              <img class="cadeado cadeado17" src="./assets/Cadeado.svg">
-          </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/upcycle_"><img class="logos" src="./assets/UpCycle.svg"></a>
-              <div class="background background18"></div>
-              <img class="cadeado cadeado18" src="./assets/Cadeado.svg">
-          </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/vinculos__?utm_source=linktree_profile_share&ltsid=a265b5b2-4f9a-4058-92a4-fa608d7b4495"><img class="logos" src="./assets/Vinculos.png"></a>
-              <div class="background background19"></div>
-              <img class="cadeado cadeado19" src="./assets/Cadeado.svg">
-          </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="item">
-              <a href="https://linktr.ee/VITICONNECT"><img class="logos" src="./assets/VitiConnect.svg"></a>
-              <div class="background background20"></div>
-              <img class="cadeado cadeado20" src="./assets/Cadeado.svg">
-          </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    </span<>
-  </div>
-  <div class="localizacao">
-    <h2>Faça parte desse evento e celebre conosco esse dia <span>especial</span></h2>
-    <section class="informacoes">
-      <div class="local">
-        <div class="btn">
-          <a target="_blank"
-            href="https://www.google.com.br/maps/place/FAAP+-+Funda%C3%A7%C3%A3o+Armando+Alvares+Penteado/@-23.5403693,-46.6732491,16z/data=!4m10!1m2!2m1!1sfaap!3m6!1s0x94ce5824d1a84617:0xb44f2198feb49ebe!8m2!3d-23.5450358!4d-46.6629439!15sCgRmYWFwIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fg%2F11h6vv2_8k?entry=ttu">Local</a>
-        </div>
-        <p>R.alagoas, 903 - <br>Higienópolis, São paulo - SP, <br>01242-902 </p>
-      </div>
-      <div class="maps">
-        <iframe class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.56248205672!2d-46.673249103940755!3d-23.540369265257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5824d1a84617%3A0xb44f2198feb49ebe!2sFAAP%20-%20Funda%C3%A7%C3%A3o%20Armando%20Alvares%20Penteado!5e0!3m2!1spt-BR!2sbr!4v1699983992662!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
+      </article>
     </section>
-    <div class="gotohome">
-      <a href="#">Volte ao início</a>
+    <section class="container">
+      <h2>O que é o demo day</h2>
+      <div class="conteudo-video">
+        <p>
+          O Demo Day representa o auge de meses dedicados a um trabalho árduo,
+          criatividade incessante e dedicação incansável. Neste evento, 20
+          grupos apaixonados estão prontos para apresentar suas ideias
+          revolucionárias. Mais do que uma simples ocasião, é uma celebração da
+          inovação, do pensamento visionário e da busca constante por soluções
+          que tenham o poder de transformar o mundo. Convidamos você a se unir a
+          nós para testemunhar a força das mentes criativas à medida que
+          abordamos suas visões e conquistas.
+        </p>
+        <iframe
+          width="590"
+          height="335"
+          src="https://www.youtube.com/embed/muKs1_fj3Lk?si=tQS4H087mklFHRMX"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <div class="containerGeral" id="projetos">
+      <div class="tituloContainer">
+        <h2 id="conhecaMais">
+          Conheça um pouco mais sobre os
+          <span id="spanConhecaMais"> Projetos </span> deste ano
+        </h2>
+      </div>
+      <div class="conteinerSwiper">
+        <div #swiperRef="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://beacons.ai/afroglow_"
+                  ><img class="logos" src="./assets/AfroGlow.svg"
+                /></a>
+                <div class="background background1"></div>
+                <img class="cadeado cadeado1" src="./assets/Cadeado.svg" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/agiliza_?utm_source=qr_code"
+                  ><img class="logos" src="./assets/Agiliza.svg"
+                /></a>
+                <div class="background background2"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado2" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/ajeitalar"
+                  ><img class="logos" src="./assets/AjeitaLar.svg"
+                /></a>
+                <div class="background background3"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado3" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/aruana8"
+                  ><img class="logos" src="./assets/Aruana.svg"
+                /></a>
+                <div class="background background4"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado4" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/bellifica?utm_source=qr_code"
+                  ><img class="logos" src="./assets/Bellifica.svg"
+                /></a>
+                <div class="background background5"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado5" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/EMP_oficial"
+                  ><img class="logos" src="./assets/Emp.svg"
+                /></a>
+                <div class="background background6"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado6" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/FicaFri.io"
+                  ><img class="logos" src="./assets/Fica-fri.io.svg"
+                /></a>
+                <div class="background background7"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado7" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href=""><img class="logos" src="./assets/Germine.svg" /></a>
+                <div class="background background8"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado8" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://bento.me/lacoos"
+                  ><img class="logos" src="./assets/Lacoos.svg"
+                /></a>
+                <div class="background background9"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado9" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/limpay"
+                  ><img class="logos" src="./assets/Limpay.png"
+                /></a>
+                <div class="background background10"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado10" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="http://bento.me/motiro"
+                  ><img class="logos" src="./assets/Motiro.png"
+                /></a>
+                <div class="background background11"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado11" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/somosparttida"
+                  ><img class="logos" src="./assets/Parttida.svg"
+                /></a>
+                <div class="background background12"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado12" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href=""
+                  ><img class="logos" src="./assets/Recostura.svg"
+                /></a>
+                <div class="background background13"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado13" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/Resily_"
+                  ><img class="logos" src="./assets/Resily.svg"
+                /></a>
+                <div class="background background14"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado14" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/smartstepsofc"
+                  ><img class="logos" src="./assets/Smart-Steps.svg"
+                /></a>
+                <div class="background background15"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado15" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/tutora.ia"
+                  ><img class="logos" src="./assets/Tutora.ia.svg"
+                /></a>
+                <div class="background background16"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado16" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/sejaumbu"
+                  ><img class="logos" src="./assets/Umbu.svg"
+                /></a>
+                <div class="background background17"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado17" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/upcycle_"
+                  ><img class="logos" src="./assets/UpCycle.svg"
+                /></a>
+                <div class="background background18"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado18" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a
+                  href="https://linktr.ee/vinculos__?utm_source=linktree_profile_share&ltsid=a265b5b2-4f9a-4058-92a4-fa608d7b4495"
+                  ><img class="logos" src="./assets/Vinculos.png"
+                /></a>
+                <div class="background background19"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado19" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="item">
+                <a href="https://linktr.ee/VITICONNECT"
+                  ><img class="logos" src="./assets/VitiConnect.svg"
+                /></a>
+                <div class="background background20"></div>
+                <div class="cadeado-container">
+                  <img class="cadeado cadeado20" src="./assets/Cadeado.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="localizacao">
+      <h2>
+        Faça parte desse evento e celebre conosco esse dia <span>especial</span>
+      </h2>
+      <section class="informacoes">
+        <div class="local">
+          <div class="btn">
+            <a
+              target="_blank"
+              href="https://www.google.com.br/maps/place/FAAP+-+Funda%C3%A7%C3%A3o+Armando+Alvares+Penteado/@-23.5403693,-46.6732491,16z/data=!4m10!1m2!2m1!1sfaap!3m6!1s0x94ce5824d1a84617:0xb44f2198feb49ebe!8m2!3d-23.5450358!4d-46.6629439!15sCgRmYWFwIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fg%2F11h6vv2_8k?entry=ttu"
+              >Local</a
+            >
+          </div>
+          <p>
+            R.alagoas, 903 - <br />Higienópolis, São paulo - SP, <br />01242-902
+          </p>
+        </div>
+        <div class="maps">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.56248205672!2d-46.673249103940755!3d-23.540369265257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5824d1a84617%3A0xb44f2198feb49ebe!2sFAAP%20-%20Funda%C3%A7%C3%A3o%20Armando%20Alvares%20Penteado!5e0!3m2!1spt-BR!2sbr!4v1699983992662!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <div class="gotohome">
+        <a href="#">Volte ao início</a>
+      </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script src="js/script.js">  </script>
+    <script src="js/script.js"></script>
     <!-- Contador -->
     <script src="js/contador.js"></script>
     <!-- Carrosel -->
     <script src="js/carrossel.js"></script>
-</body>
-
+  </body>
 </html>
