@@ -23,8 +23,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-
 var appendNumber = 4;
 var prependNumber = 1;
 document
