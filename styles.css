@@ -8,7 +8,6 @@
 
 body,
 html {
-  width: 100%;
   overflow-x: hidden;
 }
 
@@ -133,33 +132,34 @@ h3 {
 .container h2 {
   text-transform: uppercase;
   color: #1c3380;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .conteudo-video {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   height: auto;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .conteudo-video p {
   max-width: 100%;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: clamp(1rem, 1.3vw, 1.5rem);
   text-align: left;
-  flex: 1;
 }
 
 .conteudo-video iframe {
   max-width: 100%;
+  width: 45%;
   border: 10px solid #1c3380;
   border-radius: 20px;
-  flex: 1;
   height: 400px;
   margin-left: 2rem;
 }
@@ -209,42 +209,42 @@ h3 {
 /* INÍCIO - CARROSEL */
 /* 
 .container{
-    overflow: hidden;
+	overflow: hidden;
 }
 
 
 .carrosel{
-    position: relative;
-    display: flex;
-    background-color: #00B9EF;
-    width: 100vw;
-    height: 75vh;
+	position: relative;
+	display: flex;
+	background-color: #00B9EF;
+	width: 100vw;
+	height: 75vh;
 }
 
 .content{
-    position: relative;
-    display: flex; 
-    flex-direction: column;
-    height: 100%;
+	position: relative;
+	display: flex; 
+	flex-direction: column;
+	height: 100%;
 }
 
 #spanConhecaMais{
-    color: #FFCA00;
+	color: #FFCA00;
 }
 
 .carousel{
-    overflow: hidden;
-    top: 50%;
-    transform: translateY(15%);
+	overflow: hidden;
+	top: 50%;
+	transform: translateY(15%);
 }
 
 .carousel-items{
-    display: flex;
-    margin-top: 1%;
-    margin-left: 10vw;
-    align-items: center;
-    transition: 0.7s ease-in-out;
-    transform: translateX(0);
+	display: flex;
+	margin-top: 1%;
+	margin-left: 10vw;
+	align-items: center;
+	transition: 0.7s ease-in-out;
+	transform: translateX(0);
 } */
 
 #conhecaMais {
@@ -288,10 +288,10 @@ h3 {
   background-color: rgba(6, 6, 6, 0.674);
 }
 
-.cadeado-container{
-    position: absolute;
-    width: 300px;
-    height: 300px;
+.cadeado-container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
 }
 
 .cadeado {
@@ -304,10 +304,10 @@ h3 {
 }
 
 /* .img-pixar{
-    position: absolute;
-    height: 50%;
-    bottom: 0;
-    left: 25%;
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	left: 25%;
 } */
 
 /* FIM - CARROSEL */
@@ -340,7 +340,7 @@ h3 {
 
 .btn {
   background-color: #ffca00;
-  width: 50%;
+  width: 90%;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -350,6 +350,7 @@ h3 {
   margin-top: 1.4rem;
   color: #0f215f;
   font-family: "Poppins", sans-serif;
+  padding: .5rem;
 }
 
 .localizacao p {
@@ -361,16 +362,21 @@ h3 {
 .informacoes {
   background-color: #1c3380;
   display: flex;
+  justify-content: space-evenly;
+  width: 70%;
   border-radius: 10px;
-  padding: 50px;
   margin-top: 20px;
+  padding: 2rem;
+  height: auto;
 }
 
 .local {
-  width: 50%;
+  width: 30%;
+  max-width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .localizacao a {
@@ -385,8 +391,9 @@ h3 {
   text-align: center;
 }
 
-.maps {
-  width: 70%;
+.maps{
+    width: 60%;
+    height: 50vh;
 }
 
 .mapa {
@@ -401,6 +408,7 @@ h3 {
 
 .gotohome {
   margin-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .gotohome a {
@@ -413,17 +421,6 @@ footer {
   height: 10vh;
 }
 
-@media screen and (max-width: 600px) {
-  /* .localizacao {
-		height: 90vh;
-	} */
-  h3 {
-    font-size: 14px;
-  }
-  /* footer {
-		height: 10vh;
-	} */
-}
 @media screen and (max-width: 370px) {
   .destaque h4 {
     font-size: 1rem;
@@ -440,6 +437,10 @@ footer {
     text-align: left;
     width: 100%;
     font-size: 1rem;
+  }
+
+  .conteudo-video iframe {
+    height: 300px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -472,6 +473,21 @@ footer {
   .conteinerSwiper {
     padding: 0 1rem;
   }
+  .informacoes{
+    flex-direction: column;
+    align-items: center;
+  }
+  .informacoes .local{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .informacoes .maps {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -493,6 +509,7 @@ footer {
 
 @media screen and (max-width: 990px) {
   .conteudo-video {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -501,17 +518,22 @@ footer {
   }
   .conteudo-video p {
     margin-top: 5vh;
-    text-align: justify;
-    width: 100%;
+    text-align: left;
+    width: 90%;
   }
   .conteudo-video iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
     margin: 5vh 0;
   }
   .tituloContainer {
     padding: 0 0.3rem;
+  }
+
+  .informacoes{
+    width: 90%;
   }
 }
 
