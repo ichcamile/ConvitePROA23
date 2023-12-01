@@ -54,7 +54,7 @@ function removerCadeados() {
     background.style.display="none";
   }
 
-  while(i > 1){
+  while(i > 0){
     cadeado = document.querySelector(`.cadeado${i}`);
     background = document.querySelector(`.background${i}`);
     cadeado.style.display="none";
