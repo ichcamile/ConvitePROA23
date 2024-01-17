@@ -63,4 +63,4 @@ function removerCadeados() {
   }
 }
 
-window.addEventListener("load", removerCadeados())
+// window.addEventListener("load", removerCadeados())

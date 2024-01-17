@@ -12,10 +12,11 @@ function temporizador(){
     
     const totalSeconds = (demoday - currentsDate) / 1000;
 
-    const days = Math.floor(totalSeconds / 3600 / 24);
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const mins = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
+    const days = 0;
+    const hours = 0;
+    const mins= 0;
+    const seconds = 0;
+
 
     daysEl.innerHTML = days;
     hoursEl.innerHTML = formatTime(hours);  
