@@ -17,7 +17,7 @@ O Convite Demoday é uma aplicação frontend simples que visa proporcionar uma 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/convite-demoday.git
+   git clone git@github.com:ichcamile/ConvitePROA23.git
    ```
 
 2. Abra o arquivo `index.html` em seu navegador favorito.
