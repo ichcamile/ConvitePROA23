@@ -26,7 +26,7 @@ O Convite Demoday é uma aplicação frontend simples que visa proporcionar uma 
 
 ## Deploy
 
-Você pode acessar o convite diretamente através do link de deploy: (https://convite-proa-23.vercel.app/)
+Você pode acessar o convite diretamente através do link de deploy: ([Convite PROA](https://ichcamile.github.io/ConvitePROA23/))
 
 ## Autores
 
